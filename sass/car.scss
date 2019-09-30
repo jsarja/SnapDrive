@@ -1,0 +1,56 @@
+@import "variables";
+
+.car-detail li {
+    margin: 1px 0 1px 10px;
+    text-align: left;
+}
+
+.distance-input {
+    margin: 5px;
+    width: 70px;
+    text-align: center;
+    height: 18px;
+    font-size: 16px;
+}
+
+.highlight-price {
+    color: $color_1;
+}
+
+.contract-row {
+    border-top: 2px solid $text_color;
+    padding: 6px;
+}
+
+.contract-row-label {
+    font-size: 20px;
+}
+
+.contract-row-value {
+    color: $color_1;
+    font-size: 16px;
+}
+
+.contract-btn {
+    background: $color_2;
+    height: 47px;
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: $text_color;
+}
+
+.rent-btn {
+    background: $color_1;
+    height: 60px;
+    width: 80%;
+    margin-left: 10%;
+    border: none;
+    border-radius: 10px;
+    font-size: 34px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    color: $text_color;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SnapDrive</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="header">
+        <div class="bg">
+            <p class="header-text">SnapDrive</p>
+        </div>
+        <div class="overlay-3"></div>
+    </div>
+
+    <div class="content">
+        <div class="basic-box" style="margin-top: 10px">
+            <div class="overlay-1"></div>
+            <div class="bg search-content">
+                <input class="location-input" placeholder="Type Adress/City/Location"/>
+                <div class="date-row">
+                    <div class="date-input">
+                        <div>Start Date</div>
+                        <input type="date">
+                    </div>
+                    <div class="date-input">
+                        <div>End Date</div>
+                        <input type="date">
+                    </div>
+                </div>
+                <button class="options-link">More search options</button>
+                <button class="find-btn">Find</button>
+            </div>
+        </div>
+
+        <img class="loader" src="images/loader.gif" alt="loading...">
+
+        <div class="search-results">
+            <div class="filter-menu">
+                <div class="overlay-1 filter-overlay"></div>
+                <div class="filter-menu-btn map-btn">Map</div>
+                <div class="filter-menu-btn filter-btn">Filters</div>
+            </div>
+
+            <div class="basic-box car-info">
+                <div class="overlay-1"></div>
+                <div class="car-header">Volkswagen Golf - Blox Car</div>
+                <div class="car-info-row">
+                    <img class="car-img" src="images/car1.png" alt="car" />
+                    <div class="car-info-text">
+                        <p>- 5 seats</p>
+                        <p>- Air conditioning </p> 
+                        <p>- Manual Gear</p> 
+                        <p>- Medium Car</p> 
+                        <p>- Distance from location: 2.1km</p>
+                    </div>
+                </div>
+                <div class="car-info-row">
+                    <div class="car-info-price">
+                        <div class="car-price">
+                            75€
+                        </div>
+                        <div class="time-period">
+                            for 3 days
+                        </div>
+                    </div>
+                    <div class="view-car">
+                        <button class="view-car-btn">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="basic-box car-info">
+                <div class="overlay-1"></div>
+                <div class="car-header">Opel Karl - Hertz</div>
+                <div class="car-info-row">
+                    <img class="car-img" src="images/car2.png" alt="car" />
+                    <div class="car-info-text">
+                            <p>- 5 seats</p>
+                            <p>- Air conditioning </p> 
+                            <p>- Automatic Gear</p> 
+                            <p>- Small Car</p> 
+                            <p>- Distance from location: 4.1km</p>
+                    </div>
+                </div>
+                <div class="car-info-row">
+                    <div class="car-info-price">
+                        <div class="car-price">
+                            75€
+                        </div>
+                        <div class="time-period">
+                            for 3 days
+                        </div>
+                    </div>
+                    <div class="view-car">
+                        <button class="view-car-btn">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="basic-box car-info">
+                <div class="overlay-1"></div>
+                <div class="car-header">Hyundai i10 - Thrifty</div>
+                <div class="car-info-row">
+                    <img class="car-img" src="images/car3.png" alt="car" />
+                    <div class="car-info-text">
+                            <p>- 4 seats</p>
+                            <p>- Manual Gear</p> 
+                            <p>- Small Car</p> 
+                            <p>- Distance from location: 4.1km</p>
+                    </div>
+                </div>
+                <div class="car-info-row">
+                    <div class="car-info-price">
+                        <div class="car-price">
+                            75€
+                        </div>
+                        <div class="time-period">
+                            for 3 days
+                        </div>
+                    </div>
+                    <div class="view-car">
+                        <button class="view-car-btn">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav" >
+        <div class="overlay-3 nav-overlay"></div>
+        <div class="bg nav-content">
+            <div class="nav-btn active">
+                <div class="nav-icon-container-cars">
+                    <span class="vertical-helper"></span>
+                    <img class="nav-icon" src="./images/search.png" alt="Search">
+                </div>
+                <div class="nav-text-cars">Cars</div>
+            </div>
+            <div class="nav-btn" onclick="location.href='/profile.html'">
+                    <div class="nav-icon-container-profile">
+                        <span class="vertical-helper"></span>
+                        <img class="nav-icon" src="./images/profile.png" alt="Profile">
+                    </div>
+                    <div class="nav-text-profile">My Profile</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    document.querySelector(".find-btn").addEventListener('click', () => {
+        document.querySelector('.loader').style.display = "block";
+        document.querySelector('.search-results').style.display = "none";
+        setTimeout(() => {
+            document.querySelector('.loader').style.display = "none";
+            document.querySelector('.search-results').style.display = "block";
+        }, 2000);
+    })
+
+    document.querySelectorAll('.view-car-btn').forEach(elem => {
+        elem.addEventListener('click', () => {
+            location.href = '/car.html';
+        })
+    })
+</script>
+</html>

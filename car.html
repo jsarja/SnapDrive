@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SnapDrive</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="header">
+        <div class="bg">
+            <p class="header-text">SnapDrive</p>
+        </div>
+        <div class="overlay-3"></div>
+    </div>
+    
+    <div class="content">
+        <div class="basic-box" style="margin-top: 10px">
+            <div class="overlay-1"></div>
+
+            <div style="font-size: 24px;">Car Info</div>
+            <img class="car-img" src="images/car1.png" alt="">
+
+            <div style="font-size: 18px;">Wolkswagen Golf, 2014</div>
+            <div class="car-detail">
+                    <ul>
+                            <li>Air conditioning: Yes</li>
+                            <li>Gear: Manual</li>
+                            <li>Size: Medium</li>
+                            <li>Doors: 4</li>
+                            <li>Fuel type:</li>
+                            <li>Fuel consumption: 6.7 l/100km</li>
+                            <li>Comppany: Blox Car</li>
+                    </ul>
+            </div>
+        </div>
+
+        <div class="basic-box">
+            <div class="overlay-1"></div>
+
+            <div style="font-size: 24px;">Price</div>
+            <div style="font-size: 18px;">Predicted drive distance:</div>
+            <input class="distance-input" value="250"><span>km</span>
+
+            <p style="font-size: 26px;">Total Price:</p>
+            <p style="font-size: 32px;" class="highlight-price">97 €</p>
+            <p style="font-size: 22px;" class="highlight-price">for 3 days</p>
+            <p style="font-size: 14px;">Rental price: 75 €</p>
+            <p style="font-size: 14px;">Fuel cost: 22 €</p>
+        </div>
+
+        <div class="basic-box">
+            <div class="overlay-1"></div>
+
+            <div style="font-size: 24px;">Contract Overview</div>
+            
+            <div class="contract-row">
+                <p class="contract-row-label">Pickup and Return Location: </p>
+                <p class="contract-row-value">Demo road 25, B22</p>
+            </div>
+
+            <div class="contract-row">
+                <p class="contract-row-label">Pickup Time: </p>
+                <p class="contract-row-value">25.09.2019 08:00 - 18:00</p>
+            </div>
+
+            <div class="contract-row">
+                <p class="contract-row-label">Return Time:</p>
+                <p class="contract-row-value">27.09.2019 18:00</p>
+            </div>
+
+            <div class="contract-row">
+                <p class="contract-row-label">Insurance:</p>
+                <p class="contract-row-value">Own Responsibility 500€</p>
+            </div>
+
+            <div class="contract-row">
+                <p class="contract-row-label">Other Information:</p>
+                <p class="contract-row-value">- Must be returned with full gas tank.</p>
+                <p class="contract-row-value">- Required age: 19</p>
+            </div>
+
+            <button class="contract-btn">See Full Contract</button>
+        </div>
+
+        <button class="rent-btn">Rent The Car</button>
+    </div>
+
+    <div class="nav">
+        <div class="bg nav-content">
+            <div class="nav-btn active"  onclick="location.href='/search.html'">
+                <div class="nav-icon-container-cars">
+                    <span class="vertical-helper"></span>
+                    <img class="nav-icon" src="./images/search.png" alt="Search">
+                </div>
+                <div class="nav-text-cars">Cars</div>
+            </div>
+            <div class="nav-btn">
+                <div class="nav-icon-container-profile">
+                    <span class="vertical-helper"></span>
+                    <img class="nav-icon" src="./images/profile.png" alt="Profile">
+                </div>
+                <div class="nav-text-profile">My Profile</div>
+            </div>
+        </div>
+        <div class="overlay-3"></div>
+    </div>
+</body>
+</html>

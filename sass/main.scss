@@ -1,0 +1,179 @@
+@import "search";
+@import "profile";
+@import "car";
+
+body {
+    margin: 0px;
+    background-color: $primary;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: $header-height;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.content {
+    margin-top: $header-height;
+    margin-bottom: $nav-height;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    max-width: 800px;
+    overflow-y: auto;
+    min-height: 100px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+
+    color: $text_color;
+    text-align: center;
+}
+
+.nav {
+    width: 100%;
+    height: $nav-height;
+    position: fixed;
+    bottom: 0;
+}
+
+.header-text {
+    margin: 0px;
+    color: $text_color;
+    line-height: $header-height;
+    font-family: 'arial';
+    text-align: center;
+    font-size: 2rem;
+}
+
+.bg {
+    background-color: $primary;
+    width: 100%;
+    height: 100%;
+
+}
+
+.overlay-1 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    pointer-events: none;
+
+    width: 100%;
+    height: 100%;
+    background-color: $overlay;
+    border-radius: $basic_box_radius;
+    opacity: 0.07;
+}
+
+.overlay-2 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    pointer-events: none;
+
+    width: 100%;
+    height: 100%;
+    background-color: $overlay;
+    opacity: 0.10;
+}
+
+.overlay-3 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    pointer-events: none;
+
+    width: 100%;
+    height: 100%;
+    background-color: $overlay;
+    opacity: 0.12;
+}
+
+.nav-content{
+    display: flex;
+    flex-wrap: nowrap;
+
+    font-size: 1.4rem;
+    color: $nav_text_color;
+}
+
+.nav-btn{
+    width: 50%;
+    display: flex;
+}
+
+.nav-btn.active{
+    color: $text_color;
+    font-weight: bold;
+}
+
+.nav-btn:first-of-type {
+    border-right: solid rgba(255, 255, 255, 0.4) 2px;
+}
+.nav-icon-container-cars {
+    width: 40%;
+    text-align: center;
+}
+
+.nav-icon {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.vertical-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.nav-text-cars {
+    line-height: $nav-height;
+    width: 60%;
+}
+
+.nav-icon-container-profile {
+    width: 30%;
+    text-align: center;
+}
+
+.nav-text-profile {
+    line-height: $nav-height;
+    width: 70%;
+}
+
+.basic-box {
+    background: #121212;
+    margin-bottom: 10px;
+    margin-left: 3%;
+    position: relative;
+    width: 94%;
+    padding-bottom: 6px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: $basic_box_radius;
+}
+
+p {
+    margin: 0 1px;
+}
+
+@media (max-width: 290px) {
+    .nav-content{
+        font-size: .9rem;
+    }
+
+    .nav-icon {
+        width: 20px;
+    }
+}

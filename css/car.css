@@ -1,0 +1,56 @@
+.car-detail li {
+  margin: 1px 0 1px 10px;
+  text-align: left;
+}
+
+.distance-input {
+  margin: 5px;
+  width: 70px;
+  text-align: center;
+  height: 18px;
+  font-size: 16px;
+}
+
+.highlight-price {
+  color: #BB86FC;
+}
+
+.contract-row {
+  border-top: 2px solid rgba(255, 255, 255, 0.85);
+  padding: 6px;
+}
+
+.contract-row-label {
+  font-size: 20px;
+}
+
+.contract-row-value {
+  color: #BB86FC;
+  font-size: 16px;
+}
+
+.contract-btn {
+  background: #13A0CF;
+  height: 47px;
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.rent-btn {
+  background: #BB86FC;
+  height: 60px;
+  width: 80%;
+  margin-left: 10%;
+  border: none;
+  border-radius: 10px;
+  font-size: 34px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/*# sourceMappingURL=car.css.map */

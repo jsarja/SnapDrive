@@ -1,0 +1,429 @@
+.search-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.location-input {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.date-row {
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.date-input {
+  width: 48%;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 8px 0;
+  margin: 0 1%;
+}
+
+input[type=date] {
+  margin-top: 6px;
+  text-align: center;
+  font-size: 11px;
+}
+
+.options-link {
+  margin-top: 9px;
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  font-family: arial, sans-serif;
+  color: #BB86FC;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.find-btn {
+  background: #BB86FC;
+  height: 40px;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+button:focus {
+  border: none;
+  outline: none;
+}
+
+.search-results {
+  display: none;
+}
+
+.loader {
+  height: auto;
+  width: 50px;
+  margin: 10px auto;
+  display: none;
+}
+
+.filter-menu {
+  background: #121212;
+  margin-top: 10px;
+  margin-left: 20%;
+  width: 60%;
+  height: 35px;
+  display: flex;
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 35px;
+}
+
+.filter-menu-btn {
+  width: 50%;
+  color: #BB86FC;
+  font-size: 24px;
+  line-height: 35px;
+}
+
+.filter-overlay {
+  border-radius: 35px;
+}
+
+.map-btn {
+  border-right: 2px solid #000000;
+}
+
+.car-info {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.car-header {
+  margin: 9px;
+  font-size: 18px;
+}
+
+.car-info-row {
+  display: flex;
+  margin-bottom: 8px;
+  margin-left: 5%;
+}
+
+.car-img {
+  width: 40%;
+  height: auto;
+}
+
+.car-info-text {
+  text-align: left;
+  margin-left: 5%;
+  font-size: 14px;
+  width: 50%;
+}
+
+.time-period {
+  font-size: 15px;
+}
+
+.car-info-price {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.car-price {
+  font-size: 38px;
+  color: #BB86FC;
+}
+
+.view-car {
+  margin-left: 5%;
+  width: 50%;
+  text-align: center;
+}
+
+.view-car-btn {
+  background: #13A0CF;
+  height: 47px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.profile-header {
+  color: #BB86FC;
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.label {
+  margin: 3px 0;
+  font-size: 20px;
+}
+
+.profile input {
+  margin-bottom: 5px;
+  width: 85%;
+  text-align: center;
+  height: 23px;
+  font-size: 20px;
+}
+
+.save-btn {
+  background: #13A0CF;
+  height: 47px;
+  width: 80%;
+  margin-left: 10%;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.car-detail li {
+  margin: 1px 0 1px 10px;
+  text-align: left;
+}
+
+.distance-input {
+  margin: 5px;
+  width: 70px;
+  text-align: center;
+  height: 18px;
+  font-size: 16px;
+}
+
+.highlight-price {
+  color: #BB86FC;
+}
+
+.contract-row {
+  border-top: 2px solid rgba(255, 255, 255, 0.85);
+  padding: 6px;
+}
+
+.contract-row-label {
+  font-size: 20px;
+}
+
+.contract-row-value {
+  color: #BB86FC;
+  font-size: 16px;
+}
+
+.contract-btn {
+  background: #13A0CF;
+  height: 47px;
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.rent-btn {
+  background: #BB86FC;
+  height: 60px;
+  width: 80%;
+  margin-left: 10%;
+  border: none;
+  border-radius: 10px;
+  font-size: 34px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+body {
+  margin: 0px;
+  background-color: #121212;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.content {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  max-width: 800px;
+  overflow-y: auto;
+  min-height: 100px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+}
+
+.nav {
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  bottom: 0;
+}
+
+.header-text {
+  margin: 0px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 45px;
+  font-family: "arial";
+  text-align: center;
+  font-size: 2rem;
+}
+
+.bg {
+  background-color: #121212;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-1 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  opacity: 0.07;
+}
+
+.overlay-2 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0.1;
+}
+
+.overlay-3 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0.12;
+}
+
+.nav-content {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-btn {
+  width: 50%;
+  display: flex;
+}
+
+.nav-btn.active {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: bold;
+}
+
+.nav-btn:first-of-type {
+  border-right: solid rgba(255, 255, 255, 0.4) 2px;
+}
+
+.nav-icon-container-cars {
+  width: 40%;
+  text-align: center;
+}
+
+.nav-icon {
+  width: 30px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.vertical-helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.nav-text-cars {
+  line-height: 45px;
+  width: 60%;
+}
+
+.nav-icon-container-profile {
+  width: 30%;
+  text-align: center;
+}
+
+.nav-text-profile {
+  line-height: 45px;
+  width: 70%;
+}
+
+.basic-box {
+  background: #121212;
+  margin-bottom: 10px;
+  margin-left: 3%;
+  position: relative;
+  width: 94%;
+  padding-bottom: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+p {
+  margin: 0 1px;
+}
+
+@media (max-width: 290px) {
+  .nav-content {
+    font-size: 0.9rem;
+  }
+
+  .nav-icon {
+    width: 20px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
